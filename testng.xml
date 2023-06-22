@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/nagar/IdeaProjects/Program">
+        <classes>
+            <class name="Parallel.SampleTest">
+                <methods>
+                    <include name="AppiumTest"/>
+                </methods>
+            </class>
+            <class name="Parallel.SampleTest2">
+                <methods>
+                    <include name="AppiumTestt"/>
+                </methods>
+            </class>
+            <class name="StartServer.ProgTest">
+                <methods>
+                    <include name="testClick"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
