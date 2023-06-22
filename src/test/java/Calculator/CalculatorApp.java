@@ -13,6 +13,7 @@ public class CalculatorApp {
         List<Double> numbers = new ArrayList<>();
         List<String> operators = new ArrayList<>();
         System.out.println("To see final result press = operator");
+        System.out.println("when you go with scientific calculation, square root the 2nd value should be 0 and square root has operator ~");
         System.out.println("Enter value 1: ");
         double result = scanner.nextDouble();
         numbers.add(result);
