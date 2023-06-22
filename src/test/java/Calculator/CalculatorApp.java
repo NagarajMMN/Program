@@ -12,8 +12,8 @@ public class CalculatorApp {
 
         List<Double> numbers = new ArrayList<>();
         List<String> operators = new ArrayList<>();
-
-        System.out.print("Enter value 1: ");
+        System.out.println("To see final result press = operator");
+        System.out.println("Enter value 1: ");
         double result = scanner.nextDouble();
         numbers.add(result);
 
