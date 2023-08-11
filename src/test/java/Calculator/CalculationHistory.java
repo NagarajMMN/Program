@@ -5,9 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CalculationHistory {
-
+    private static CalculationHistory instance = null;
     private static final String HISTORY_FILE = "C:\\Users\\nagar\\Pictures\\History File.txt";
 
+    public static CalculationHistory getInstance() {
+        if (instance == null) {
+            instance = new CalculationHistory();
+        }
+        return instance;
+    }
 
     public static void saveHistory(List<String> history) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(HISTORY_FILE))) {
