@@ -30,13 +30,12 @@ public class CalculatorApp {
                 e.printStackTrace();
             }
         }
-
-        List<String> history = null;
             int count = 0;
             boolean continueInput = true;
 
             List<Double> numbers = new ArrayList<>();
             List<String> operators = new ArrayList<>();
+        List<String> history = CalculationHistory.getInstance().loadHistory();
             System.out.println("To see final result press = operator");
             System.out.println("when you go with scientific calculation"
                     + '\n' + "square root the 2nd value should be 0"
@@ -45,7 +44,6 @@ public class CalculatorApp {
             System.out.println("To view history, enter 'yes'");
             String command = scanner.next();
             if (command.equalsIgnoreCase("yes")) {
-                 history = CalculationHistory.getInstance().loadHistory();
                 viewHistory(history);
             }System.out.println("To perform calculation, enter 'yes'");
         String command2 = scanner.next();
